@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Abu Grocery Shop</title>
+        <link rel="stylesheet" href="grocery.css">
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav>
+            <ul>
+                <li><a href=grocery.html>Home</a></li>
+                <li><a href=subGrocery.html>List of Items</a></li>
+                <li><a href=specialDeals.html>Special Deals!</a></li>
+                <li><a href=formGrocery.html target="_blank">Order Form</a></li>
+                <li><a href=contactUs.html>How to contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!--Picture of Grocery Shop-->
+        <section>
+            <img class="grocery" src="img1.jpg" style="width:100%">
+            <img class="grocery" src="img2.jpg" style="width:100%">
+            <img class="grocery" src="img3.jpg" style="width:100%">
+        </section>
+        
+        <!--About Grocery-->
+        <section class="about" style="max-width:600px">
+            <h1 class="main" style="text-align: center; font-size: 24px; margin-bottom: 10px;">Welcome to Intan Grocery Shop</h1>
+            <p class="sub" style="text-align: center; font-style: italic; margin-bottom: 20px;"><i>About This Shop</i></p>
+            <p class="text" style="text-align:justify; line-height:1.5;" ;> Spare more with <b>Intan Grocery Shop</b>! We give you the most minimal costs on the entirety of your grocery needs.
+                            <b>Intan Grocery Shop</b> is a low-cost online general store that you cannot find anywhere. You can browse may item as you want!
+                            You can either self-pick up or get your item at your door. You can get discount  if you buy RM200 and above. T&C apply. Thank you for visting us!
+            </p>
+        </section>
+        <audio controls autoplay>
+            <source src="lofi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+            
+        <!--Footer-->
+        <footer class="end">
+            <b>&copy IntanEnterprise</b>
+        </footer>
+
+        <script>
+            var index=0;
+            displayImg();
+
+            function displayImg(){
+                var img= document.getElementsByClassName("grocery");
+                for (var i = 0; i < img.length; i++)
+                    img[i].style.display = "none";
+                index++;
+                if (index > img.length)
+                    index =1;
+                img[index-1].style.display="block";
+                setTimeout(displayImg,3000);
+            }
+        </script>
+        
+
+    </body>
+</html>
