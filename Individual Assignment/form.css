@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333; 
+  }
+
+  nav {
+    background-color: #4a4a40;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f8f6f6;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #f7f5f5;
+    color: #4a4a40;
+  }
+  
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222; 
+  }
+  
+  /* form input colors */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  /* button and input reset colors */
+  button[type="button"],
+  input[type="reset"] {
+    padding: 10px 20px;
+    background-color: rgb(146, 78, 36);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button[type="button"]:hover,
+  input[type="reset"]:hover {
+    background-color: rgb(183, 93, 38);
+  }
+  
