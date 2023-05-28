@@ -99,24 +99,26 @@
                 total *=0.90;
             else if(total > 1000)
                 total*=0.85;
-            else
+            else if (total > 2000)
                 total*=0.80;
+          
             return total.toFixed(2);
         }
         function calculateDiscount(total) {
             
             var discount = "";
 
-            if (total > 200 && total <= 500) {
+            if (total > 200 && total <= 500) 
                 discount = "Congratulations! You qualify for a 5% discount.";
-            } else if (total> 500 && total<= 1000) {
+            else if (total> 500 && total<= 1000)
                 discount = "Congratulations! You qualify for a 10% discount.";
-            } else if (total > 1000) {
+            else if (total > 1000 && total <=2000)
                 discount = "Congratulations! You qualify for a 15% discount.";
-            } else {
+            else if (total > 2000)
                 discount = "Great news! You qualify for a 20% discount.";
-            }
-
+            else 
+                discount="No discount is applicable.";
+            
             return discount;
         }
 
